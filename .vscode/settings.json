@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode"
+    },
+    "typescript.preferences.importModuleSpecifier": "project-relative",
+    "typescript.tsserver.maxTsServerMemory": 4096,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+}

@@ -1,0 +1,21 @@
+---
+import Header from '../components/header.astro'
+import Hero from '../components/hero.astro'
+import Layout from './layout.astro'
+import { main } from './main.css'
+
+export interface Props {
+    title: string
+}
+
+const { title } = Astro.props
+---
+
+<Layout title={title}>
+    <Header />
+    <!-- <Nav menu={menu.Top} /> -->
+    <Hero />
+    <main id="content" class={main}>
+        <slot />
+    </main>
+</Layout>

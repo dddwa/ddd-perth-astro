@@ -1,15 +1,22 @@
 {
-  "name": "ddd-perth-astro",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^2.1.7"
-  }
+    "name": "ddd-perth-astro",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@vanilla-extract/css": "^1.11.0",
+        "astro": "^2.1.7",
+        "astro-vanilla-extract": "^2.0.0",
+        "date-fns": "^2.29.3"
+    },
+    "devDependencies": {
+        "prettier-plugin-astro": "^0.8.0",
+        "vite": "^4.2.1"
+    }
 }

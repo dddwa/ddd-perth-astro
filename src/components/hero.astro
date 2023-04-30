@@ -1,0 +1,23 @@
+---
+import { conferenceConfig } from '../config/conference-config'
+import { hero, conferenceDetails, credit } from './hero.css'
+import { formatISO } from 'date-fns'
+---
+
+<section class={hero}>
+    <p class={conferenceDetails}>
+        {
+            conferenceConfig.current.conferenceDate && (
+                <time datetime={formatISO(conferenceConfig.current.conferenceDate)}>
+                    {conferenceConfig.current.year}
+                </time>
+            )
+        }
+        {conferenceConfig.current.venue && <span>{conferenceConfig.current.venue.name}</span>}
+    </p>
+    <p class={credit}>
+        Photo by{' '}
+        <a href="https://unsplash.com/@drone_nr" target="_blank" rel="noopener">Josh Spires</a>
+        - dronenr on Unsplash
+    </p>
+</section>

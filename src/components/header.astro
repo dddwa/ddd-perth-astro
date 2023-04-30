@@ -1,0 +1,13 @@
+---
+import { conferenceConfig } from '../config/conference-config'
+import { anchor, header } from './nav.css'
+import HeaderSocials from './header/header-socials.astro'
+---
+
+<header class={header}>
+    <!-- <NavToggle /> -->
+    <a aria-label={conferenceConfig.name} href="/" class={anchor}>
+        <img src="/dddlogo.svg" alt="DDD Perth Logo" />
+    </a>
+    <HeaderSocials />
+</header>

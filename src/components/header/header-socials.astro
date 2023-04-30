@@ -1,0 +1,67 @@
+---
+import { socials } from '../../config/socials'
+import { socialsLink, socialsUl } from './header-socials.css'
+---
+
+<ul class={socialsUl}>
+    {
+        socials.Facebook && (
+            <li>
+                <a
+                    class={socialsLink}
+                    href={`https://facebook.com/${socials.Facebook}`}
+                    target="_blank"
+                    rel="noopener nofollow"
+                >
+                    <img src="/facebook.svg" alt="Facebook" />
+                    <span>Facebook, opens in new window</span>
+                </a>
+            </li>
+        )
+    }
+    {
+        socials.Instagram && (
+            <li>
+                <a
+                    class={socialsLink}
+                    href={`https://www.instagram.com/${socials.Instagram}`}
+                    target="_blank"
+                    rel="noopener nofollow"
+                >
+                    <img src="/instagram.svg" alt="Instagram" />
+                    <span>Instagram, opens in new window</span>
+                </a>
+            </li>
+        )
+    }
+    {
+        socials.Twitter && (
+            <li>
+                <a
+                    class={socialsLink}
+                    href={`https://twitter.com/${socials.Twitter.Name}`}
+                    target="_blank"
+                    rel="noopener nofollow"
+                >
+                    <img src="/twitter.svg" alt="Twitter" />
+                    <span>Twitter, opens in new window</span>
+                </a>
+            </li>
+        )
+    }
+    {
+        socials.Linkedin && (
+            <li>
+                <a
+                    class={socialsLink}
+                    href={`https://www.linkedin.com/company/${socials.Linkedin}`}
+                    target="_blank"
+                    rel="noopener nofollow"
+                >
+                    <img src="/linkedin.svg" alt="LinkedIn" />
+                    <span>LinkedIn, opens in new window</span>
+                </a>
+            </li>
+        )
+    }
+</ul>
