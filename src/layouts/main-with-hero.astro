@@ -4,6 +4,9 @@ import Hero from '../components/hero.astro'
 import Layout from './layout.astro'
 import { main } from './main.css'
 
+// PANDA CSS
+import { css } from '../../styled-system/css'
+
 export interface Props {
     title: string
 }
@@ -13,6 +16,7 @@ const { title } = Astro.props
 
 <Layout title={title}>
     <Header />
+    <div class={css({ bg: 'red.400', w: '100%', h: '100px' })} />
     <!-- <Nav menu={menu.Top} /> -->
     <Hero />
     <main id="content" class={main}>

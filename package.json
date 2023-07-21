@@ -7,15 +7,26 @@
         "start": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "prepare": "panda codegen"
     },
     "dependencies": {
+        "@astrojs/react": "^2.2.1",
+        "@nanostores/react": "^0.7.1",
+        "@types/react": "^18.2.15",
+        "@types/react-dom": "^18.2.7",
         "@vanilla-extract/css": "^1.11.0",
         "astro": "^2.1.7",
         "astro-vanilla-extract": "^2.0.0",
-        "date-fns": "^2.29.3"
+        "date-fns": "^2.29.3",
+        "nanostores": "^0.9.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
+        "@pandacss/dev": "^0.7.0",
+        "node-html-parser": "^6.1.5",
+        "postcss-inline-svg": "^6.0.0",
         "prettier-plugin-astro": "^0.8.0",
         "vite": "^4.2.1"
     }
