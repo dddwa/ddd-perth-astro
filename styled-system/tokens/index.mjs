@@ -1680,7 +1680,7 @@ const tokens = {
     "variable": "var(--colors-2023-pink)"
   },
   "colors.2023-gray": {
-    "value": "#58595B",
+    "value": "#C8C8C8",
     "variable": "var(--colors-2023-gray)"
   },
   "colors.2023-red": {
