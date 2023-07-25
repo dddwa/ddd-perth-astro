@@ -1,4 +1,8 @@
 ---
+// Components
+import Fonts from '../components/core/fonts.astro'
+
+// Styles
 import { themeClass, themeValues } from '../theme.css'
 
 // PANDA Styles
@@ -19,6 +23,7 @@ const { title } = Astro.props
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <Fonts />
     </head>
     <body class={themeClass}>
         <slot />

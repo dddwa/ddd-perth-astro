@@ -6,6 +6,7 @@ import { conferenceConfig } from '../config/conference-config'
 import Svg from './util/svg.astro'
 import MenuButton from './header/MenuButton'
 import MenuFlyout from './header/MenuFlyout'
+import DesktopLinks from './header/DesktopLinks'
 
 // Panda CSS
 import { css } from '../../styled-system/css'
@@ -31,7 +32,7 @@ import TicketIcon from '/public/svg/ticket-icon.svg' // Import from root
                 <div class={css({ display: 'flex', flexDir: 'row', justifyContent: 'flex-start',  alignItems: 'flex-start' })}>
                     <!-- Desktop Links -->
                     <div class={css({ display: 'none', flexDir: 'row', justifyContent: 'flex-start',  alignItems: 'flex-start', sm: { display: 'flex' } })}>
-
+                        <DesktopLinks client:load />
                     </div>
                     <!-- Primary Buttons -->
                     <div class={css({ display: 'flex', flexDir: 'row', justifyContent: 'flex-start',  alignItems: 'center' })}>

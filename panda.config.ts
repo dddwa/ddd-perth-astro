@@ -38,6 +38,11 @@ export default defineConfig({
                     '2023-gray': { value: '#58595B' },
                     '2023-red': { value: '#880007' },
                     '2023-accessible-orange': { value: '#D97F07' },
+                    '2023-black': { value: '#1d1d1d' },
+                },
+                fonts: {
+                    display: { value: 'Roboto Slab, sans-serif' },
+                    body: { value: 'Roboto, sans-serif' },
                 }
             }
         }
