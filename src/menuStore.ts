@@ -1,3 +1,3 @@
 import { atom } from 'nanostores';
 
-export const isMenuOpen = atom(true);
+export const isMenuOpen = atom(false);

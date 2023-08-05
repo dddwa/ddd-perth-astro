@@ -1680,7 +1680,7 @@ const tokens = {
     "variable": "var(--colors-2023-pink)"
   },
   "colors.2023-gray": {
-    "value": "#C8C8C8",
+    "value": "#58595B",
     "variable": "var(--colors-2023-gray)"
   },
   "colors.2023-red": {
@@ -1694,6 +1694,18 @@ const tokens = {
   "colors.2023-black": {
     "value": "#1d1d1d",
     "variable": "var(--colors-2023-black)"
+  },
+  "colors.2023-white-ii": {
+    "value": "#F5F5F5",
+    "variable": "var(--colors-2023-white-ii)"
+  },
+  "colors.2023-gray-light": {
+    "value": "#C8C8C8",
+    "variable": "var(--colors-2023-gray-light)"
+  },
+  "colors.2023-gray-light-ii": {
+    "value": "#EAEAEA",
+    "variable": "var(--colors-2023-gray-light-ii)"
   },
   "fonts.sans": {
     "value": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
