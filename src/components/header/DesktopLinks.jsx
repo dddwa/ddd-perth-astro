@@ -68,7 +68,7 @@ export default function DesktopLinks() {
                     onClick={() => setActiveIndex(0)}
                 />
             ) : null}
-            <div className={`desktop-links ${css({ w: '100%', h: '100%', display: 'flex', position: 'relative', flexDir: 'row', justifyContent: 'center', alignItems: 'center', mr: '4', zIndex: '10' })}`}>
+            <div className={`desktop-links ${css({ w: '100%', h: '100%', display: 'flex', position: 'relative', flexDir: 'row', justifyContent: 'center', alignItems: 'center', mr: '2', lg: { mr: '3' }, xl: { mr: '4' }, zIndex: '10' })}`}>
                 {menuData.map((item, index) => (
                     item.subPages ? (
                         <DesktopButton item={item} index={index + 1} key={index} />
