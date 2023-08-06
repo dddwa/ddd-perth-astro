@@ -1,8 +1,15 @@
 ---
+// Components
+import Fonts from '../components/core/fonts.astro'
+
+// Styles
 import { themeClass, themeValues } from '../theme.css'
 
 // PANDA Styles
 import '../index.css'
+
+// Panda CSS
+import { css } from '../../styled-system/css';
 
 export interface Props {
     title: string
@@ -19,8 +26,9 @@ const { title } = Astro.props
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
+        <Fonts />
     </head>
-    <body class={themeClass}>
+    <body class={`${themeClass} ${css({ position: 'relative' })}`}>
         <slot />
     </body>
 </html>
@@ -54,15 +62,15 @@ const { title } = Astro.props
         min-height: 100vh;
     }
 
-    a {
-        color: var(--textColour);
-        transition: color 0.3s linear;
-    }
+    /*a {*/
+    /*    color: var(--textColour);*/
+    /*    transition: color 0.3s linear;*/
+    /*}*/
 
-    a:focus,
-    a:hover {
-        color: var(--linkHoverColor);
-    }
+    /*a:focus,*/
+    /*a:hover {*/
+    /*    color: var(--linkHoverColor);*/
+    /*}*/
 
     @media (prefers-reduced-motion: reduce) {
         *,
