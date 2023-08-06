@@ -46,6 +46,10 @@ export default defineConfig({
                 fonts: {
                     display: { value: 'Roboto Slab, sans-serif' },
                     body: { value: 'Roboto, sans-serif' },
+                },
+                sizes: {
+                    120: { value: '30rem' },
+                    160: { value: '40rem' },
                 }
             }
         }
