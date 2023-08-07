@@ -25,4 +25,12 @@
             animation-timing-function: cubic-bezier(0,0,0.2,1)
         }
     }
+    @keyframes rotateText {
+        0% {
+            transform: rotate(0deg)
+        }
+        100% {
+            transform: rotate(-360deg)
+        }
+    }
 }

@@ -44,7 +44,7 @@ import TicketIcon from '/public/svg/ticket-icon.svg'; // Import from root
                         <a
                             aria-label={`Buy tickets`}
                             href={`/`}
-                            class={css({ w: '20', h: '20', bg: '2023-orange', display: 'flex', justifyContent: 'center', alignItems: 'center', md: { w: 'auto', h: 'auto', bg: '2023-green', px: '8', py: '5' } })}
+                            class={css({ w: '20', h: '20', bg: '2023-orange', display: 'flex', justifyContent: 'center', alignItems: 'center', md: { w: 'auto', h: 'auto', bg: '2023-green', px: '8', py: '5', transition: 'colors', _hover: { bg: '2023-orange' }, _active: { bg: '2023-red' }, _focus: { ring: '2023-black' } } })}
                         >
                             <Svg src={TicketIcon} className={css({ w: '7', xs: { w: '8' }, md: { display: 'none' } })} />
                             <span class={css({ display: 'none', color: 'white', md: { display: 'block', fontFamily: 'display', fontWeight: 'semibold' } })}>

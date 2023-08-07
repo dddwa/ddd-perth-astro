@@ -3,8 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 
 // Panda CSS
 import { css } from '../../../styled-system/css';
-import BannerDesktop from '../../../public/video/banner-desktop.mp4'
-import BannerMobile from '../../../public/video/banner-mobile.mp4'
+import BannerDesktop from '../../video/banner-desktop.mp4'
+import BannerMobile from '../../video/banner-mobile.mp4'
 export default function GenericVideoPanel({ link, size, padding, mobileImage, desktopImage, alt }) {
     const video = useRef(null);
 

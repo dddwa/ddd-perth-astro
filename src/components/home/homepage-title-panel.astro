@@ -1,0 +1,46 @@
+---
+// Libraries
+
+// Components
+import { button } from '../molecules/button.astro'
+
+// Panda CSS
+import { css } from '../../../styled-system/css'
+import CircleDateModule from './modules/CircleDateModule'
+
+// Styles
+
+// ${css({ w: '100%' })}
+---
+
+<div class={`homepage-title-panel ${css({ w: '100%', position: 'relative', bg: '2023-white-i', zIndex: '2' })}`}>
+    <div class={`date-wrapper ${css({ position: 'absolute', w: '32', h: '32', right: '-1.75rem', top: '-24', xs: { w: '40', h: '40', top: '-7.5rem', right: '0' }, sm: { w: '40', h: '40', top: '-7.5rem', right: '-4' }, md: { w: '40', h: '40', top: '-7.5rem', right: '10' }, lg: { w: '64', h: '64', top: '-48', right: '-4' }, xl: { w: '64', h: '64', top: '-48', right: '16' } })}`}>
+        <CircleDateModule client:load />
+    </div>
+    <div class={`container-wrapper ${css({ w: '100%', maxW: '1200px', mx: 'auto' })}`}>
+        <div class={`padding-wrapper ${css({ w: '100%', px: '6', py: '8', sm: { px: '8', py: '10' }, lg: { px: '10', py: '12' }, xl: { px: '12', py: '16' } })}`}>
+            <div class={`content-wrapper ${css({ w: '100%', display: 'flex', flexDir: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', sm: { justifyContent: 'center', alignItems: 'center' } })}`}>
+                <h1 class={css({ fontFamily: 'display', fontSize: 'xl', fontWeight: 'bold', maxW: '18rem', sm: { textAlign: 'center', fontSize: '2xl', maxW: '32rem' }, lg: { fontSize: '3xl', maxW: '40rem' }, xl: { fontSize: '4xl', maxW: '52rem' } })}>
+                    <span class={css({ color: '2023-black' })}>A one day, fully inclusive, approachable and affordable tech conference for </span>
+                    <span class={css({ color: '2023-accessible-orange' })}>everyone.</span>
+                </h1>
+                <div class={`paragraph-wrapper ${css({ w: '100%', display: 'flex', flexDir: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', mt: '6', sm: { mt: '8', textAlign: 'center', justifyContent: 'center', alignItems: 'center' }, lg: { mt: '10', fontSize: 'lg', maxW: '62rem' } })}`}>
+                    <p>
+                        DDD Perth is Perth's largest community run conference for the tech community. Our goal is to create an inclusive, approachable event that appeals to everyone, especially people that don't normally get to attend or speak at conferences.
+                    </p>
+                    <p class={css({ mt: '4', lg: { mt: '6' } })}>
+                        Check out the agenda and talks from previous years, or hear more about how we do what we do on our blog.
+                    </p>
+                </div>
+                <div class={`buttons-wrapper ${css({ w: '100%', display: 'flex', flexDir: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', mt: '6', gap: '4', sm: { flexDir: 'row', justifyContent: 'center', alignItems: 'center', mt: '8' }, lg: { mt: '10' } })}`}>
+                    <a href='/' class={`${button({ visual: 'primary', size: 'lg', width: 'full' })}`}>
+                        Buy tickets
+                    </a>
+                    <a href='/' class={`${button({ visual: 'secondary', size: 'lg', width: 'full' })}`}>
+                        Submit presentation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

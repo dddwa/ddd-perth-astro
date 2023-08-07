@@ -39,6 +39,7 @@ export default defineConfig({
                     '2023-red': { value: '#880007' },
                     '2023-accessible-orange': { value: '#D97F07' },
                     '2023-black': { value: '#1d1d1d' },
+                    '2023-white-i': { value: '#FCFCFC' },
                     '2023-white-ii': { value: '#F5F5F5' },
                     '2023-gray-light': { value: '#C8C8C8' },
                     '2023-gray-light-ii': { value: '#EAEAEA' },
@@ -50,6 +51,16 @@ export default defineConfig({
                 sizes: {
                     120: { value: '30rem' },
                     160: { value: '40rem' },
+                }
+            },
+            keyframes: {
+                rotateText: {
+                    '0%': {
+                        transform: 'rotate(0deg)'
+                    },
+                    '100%': {
+                        transform: 'rotate(-360deg)'
+                    },
                 }
             }
         }

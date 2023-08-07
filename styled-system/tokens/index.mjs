@@ -1443,6 +1443,10 @@ const tokens = {
     "value": "#1d1d1d",
     "variable": "var(--colors-2023-black)"
   },
+  "colors.2023-white-i": {
+    "value": "#FCFCFC",
+    "variable": "var(--colors-2023-white-i)"
+  },
   "colors.2023-white-ii": {
     "value": "#F5F5F5",
     "variable": "var(--colors-2023-white-ii)"

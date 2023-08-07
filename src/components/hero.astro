@@ -7,6 +7,7 @@ import { formatISO } from 'date-fns'
 
 // Components
 import HomepageHeroPanel from './home/HomepageHeroPanel'
+import HomepageTitlePanel from './home/homepage-title-panel.astro'
 
 // Panda CSS
 import { css } from '../../styled-system/css'
@@ -18,5 +19,6 @@ import { hero, conferenceDetails, credit } from './hero.css'
 <section class={`hero`}>
     <div class={css({ w: '100%' })}>
         <HomepageHeroPanel client:load />
+        <HomepageTitlePanel />
     </div>
 </section>
