@@ -16,7 +16,7 @@ import { css } from '../../styled-system/css'
 import { hero, conferenceDetails, credit } from './hero.css'
 ---
 
-<section class={`hero`}>
+<section class={`hero ${css({ overflowX: 'hidden' })}`}>
     <div class={css({ w: '100%' })}>
         <HomepageHeroPanel client:load />
         <HomepageTitlePanel />
