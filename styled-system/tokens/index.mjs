@@ -1739,6 +1739,10 @@ const tokens = {
     "value": "2560px",
     "variable": "var(--sizes-breakpoint-6xl)"
   },
+  "zIndex.9999": {
+    "value": 9999,
+    "variable": "var(--z-index-9999)"
+  },
   "breakpoints.xxs": {
     "value": "340px",
     "variable": "var(--breakpoints-xxs)"

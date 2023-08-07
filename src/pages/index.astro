@@ -1,61 +1,17 @@
 ---
+// Libraries
 import { conferenceConfig } from '../config/conference-config'
+
+// Components
 import MainWithHero from '../layouts/main-with-hero.astro'
+import HomePageDatesPanel from '../components/home/homepage-dates-panel.astro'
+
+// Styles
 import { styledPara } from '../styles.css'
 ---
 
 <MainWithHero title="DDD Perth 2023">
-    <section>
-        <h2>
-            {conferenceConfig.name}
-            {conferenceConfig.current.year}
-        </h2>
-        <p class={styledPara}>
-            {conferenceConfig.name} is Perth's largest community run conference for the tech community. Our goal is to create
-            an approachable event that appeals to the whole community, especially people that don't normally get to attend
-            or speak at conferences. The conference is run on a Saturday, and strives to be inclusive of everyone in the
-            Perth tech community.
-        </p>
-        <p class={styledPara}>
-            {conferenceConfig.name} is Perth's largest community run conference for the tech community. Our goal is to create
-            an approachable event that appeals to the whole community, especially people that don't normally get to attend
-            or speak at conferences. The conference is run on a Saturday, and strives to be inclusive of everyone in the
-            Perth tech community.
-        </p>
-        <p class={styledPara}>
-            {conferenceConfig.name} is Perth's largest community run conference for the tech community. Our goal is to create
-            an approachable event that appeals to the whole community, especially people that don't normally get to attend
-            or speak at conferences. The conference is run on a Saturday, and strives to be inclusive of everyone in the
-            Perth tech community.
-        </p>
-        <p class={styledPara}>
-            {conferenceConfig.name} is Perth's largest community run conference for the tech community. Our goal is to create
-            an approachable event that appeals to the whole community, especially people that don't normally get to attend
-            or speak at conferences. The conference is run on a Saturday, and strives to be inclusive of everyone in the
-            Perth tech community.
-        </p>
-        <p class={styledPara}>
-            {conferenceConfig.name} is Perth's largest community run conference for the tech community. Our goal is to create
-            an approachable event that appeals to the whole community, especially people that don't normally get to attend
-            or speak at conferences. The conference is run on a Saturday, and strives to be inclusive of everyone in the
-            Perth tech community.
-        </p>
-        <p class={styledPara}>
-            {conferenceConfig.name} is Perth's largest community run conference for the tech community. Our goal is to create
-            an approachable event that appeals to the whole community, especially people that don't normally get to attend
-            or speak at conferences. The conference is run on a Saturday, and strives to be inclusive of everyone in the
-            Perth tech community.
-        </p>
-        <p class={styledPara}>
-            {conferenceConfig.name} is Perth's largest community run conference for the tech community. Our goal is to create
-            an approachable event that appeals to the whole community, especially people that don't normally get to attend
-            or speak at conferences. The conference is run on a Saturday, and strives to be inclusive of everyone in the
-            Perth tech community.
-        </p>
-        <p class={styledPara}>
-            Check out the agenda and talks from previous years, or hear more about how we do what we do on our blog.
-        </p>
-    </section>
+    <HomePageDatesPanel />
     <!-- <ImportantDates conference={conference} actions={actions} currentDate={currentDate} />
     <Keynotes conference={conference} />
     <Sponsors

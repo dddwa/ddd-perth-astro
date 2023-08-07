@@ -435,6 +435,7 @@
   --sizes-breakpoint-4xl: 1920px;
   --sizes-breakpoint-5xl: 2100px;
   --sizes-breakpoint-6xl: 2560px;
+  --z-index-9999: 9999;
   --breakpoints-xxs: 340px;
   --breakpoints-xs: 400px;
   --breakpoints-sm: 640px;

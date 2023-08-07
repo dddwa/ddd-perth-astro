@@ -1,6 +1,9 @@
 ---
 // Components
+import SkipToContent from '../components/header/skip-to-content.astro'
 import Header from '../components/header.astro'
+import Footer from '../components/footer.astro'
+import Acknowledgement from '../components/acknowledgement.astro'
 import Hero from '../components/hero.astro'
 import Layout from './layout.astro'
 
@@ -18,9 +21,12 @@ const { title } = Astro.props
 ---
 
 <Layout title={title}>
+    <SkipToContent />
     <Header />
     <Hero />
-    <main id="content" class={main}>
+    <main id="main" class={main}>
         <slot />
     </main>
+    <Footer />
+    <Acknowledgement />
 </Layout>

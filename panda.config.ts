@@ -51,6 +51,9 @@ export default defineConfig({
                 sizes: {
                     120: { value: '30rem' },
                     160: { value: '40rem' },
+                },
+                zIndex: {
+                    '9999': { value: 9999 }
                 }
             },
             keyframes: {
