@@ -6,9 +6,9 @@ import { css } from '../../../../styled-system/css';
 
 export default function CircleDateModule() {
 
-    const backgroundText = 'Oct 7 Oct 7 Oct 7 Oct 7 '; // Make sure to add space at end
+    const backgroundText = 'Oct 7 ⏺ Oct 7 ⏺ Oct 7 ⏺ Oct 7 ⏺ '; // Make sure to add space at end
     const innerText = 'Optus Stadium';
-    let numChars = 0;
+    let numChars = 0; // Original num - will increment below
     backgroundText.split('').map(() => {
         numChars++;
     });
@@ -21,7 +21,7 @@ export default function CircleDateModule() {
                     <div className={`text-adjustment-white ${css({ w: '100%', h: '100%', position: 'absolute', top: '-16', xs: { top: '-20' }, lg: { top: '-32' } })}`}>
                         {backgroundText.split('').map((char, index) => (
                             <span
-                                style={{ transform: `translate(0,0) rotate(${index * angle * 2}deg)` }}
+                                style={{ transform: `translate(-4px,0) rotate(${index * angle * 2}deg)` }}
                                 className={`letter ${css({ fontSize: 'lg', lineHeight: '1.6rem', color: 'white', fontFamily: 'display', display: 'inline-block', fontWeight: 'medium', textAlign: 'center', position: 'absolute', w: 'auto', h: '16', left: '16', top: '16', transformOrigin: 'bottom center', xs: { h: '20', left: '20', top: '20', fontSize: 'xl', lineHeight: '2rem' }, lg: { fontSize: '3xl', h: '32', left: '32', top: '32', lineHeight: '2.4rem' } })}`}
                                 key={index}
                             >
@@ -36,7 +36,7 @@ export default function CircleDateModule() {
                     <div className={`text-adjustment-black ${css({ w: '100%', h: '100%', position: 'absolute', bottom: '16', xs: { bottom: '20' }, lg: { bottom: '32' } })}`}>
                         {backgroundText.split('').map((char, index) => (
                             <span
-                                style={{ transform: `translate(0,0) rotate(${index * angle * 2}deg)` }}
+                                style={{ transform: `translate(-4px,0) rotate(${index * angle * 2}deg)` }}
                                 className={`letter ${css({ fontSize: 'lg', lineHeight: '1.6rem', color: 'black', fontFamily: 'display', display: 'inline-block', fontWeight: 'medium', textAlign: 'center', position: 'absolute', w: 'auto', h: '16', left: '16', top: '16', transformOrigin: 'bottom center', xs: { h: '20', left: '20', top: '20', fontSize: 'xl', lineHeight: '2rem' }, lg: { fontSize: '3xl', h: '32', left: '32', top: '32', lineHeight: '2.4rem' } })}`}
                                 key={index}
                             >
