@@ -80,23 +80,23 @@ import LogoStandard2023 from '/public/svg/logo-standard-2023-white.svg';
                     </div>
                 ))}
             </div>
-            <div class={`copyright-wrapper ${css({ w: '100%', position: 'relative', display: 'flex', flexDir: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', p: '6', pb: '0', color: '2023-gray-light', fontSize: 'sm', sm: { flexDir: 'row', alignItems: 'center' }, lg: { justifyContent: 'center', p: '8', pb: '0' } })}`}>
-                <p>Copyright © 2023 DDD WA Inc.</p>
-                <p class={css({ pt: '2', sm: { pt: '0', pl: '6' }, lg: { pl: '8' } })}>ABN 19 622 848 276</p>
-            </div>
             <div class={`terms-wrapper ${css({ w: '100%', position: 'relative', display: 'flex', flexDir: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', pt: '6', sm: { flexDir: 'row', alignItems: 'center' }, lg: { justifyContent: 'center', px: '2', pt: '8' } })}`}>
                 <a
-                    href={`/`}
+                    href={`/terms-and-conditions`}
                     class={`${button({ visual: 'hyperlink', size: 'sm', width: 'full' })} ${css({ lg: { w: 'auto', fontSize: 'lg' } })}`}
                 >
                     Terms and Conditions
                 </a>
                 <a
-                    href={`/`}
+                    href={`/privacy-statement`}
                     class={`${button({ visual: 'hyperlink', size: 'sm', width: 'full' })} ${css({ lg: { w: 'auto', fontSize: 'lg' } })}`}
                 >
                     Privacy Statement
                 </a>
+            </div>
+            <div class={`copyright-wrapper ${css({ w: '100%', position: 'relative', display: 'flex', flexDir: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', p: '6', pb: '0', color: '2023-gray-light', fontSize: 'sm', sm: { flexDir: 'row', alignItems: 'center' }, lg: { justifyContent: 'center', p: '8', pb: '0' } })}`}>
+                <p>Copyright © 2023 DDD WA Inc.</p>
+                <p class={css({ pt: '2', sm: { pt: '0', pl: '6' }, lg: { pl: '8' } })}>ABN 19 622 848 276</p>
             </div>
             <div class={`back-to-top-wrapper ${css({ w: '100%', position: 'relative', display: 'flex', flexDir: 'column', justifyContent: 'flex-start', alignItems: 'flex-start', pt: '6', lg: { justifyContent: 'center', alignItems: 'center', py: '8' } })}`}>
                 <a
