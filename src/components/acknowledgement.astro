@@ -1,0 +1,14 @@
+---
+// Panda CSS
+import { css } from '../../styled-system/css'
+---
+
+<section class={`global-acknowledgement ${css({ position: 'relative', bg: 'white', w: '100%', display: 'flex' })}`}>
+    <div class={`container-wrapper ${css({ w: '100%', position: 'relative', maxW: '1200px', m: '0 auto' })}`}>
+        <div class={`padding-wrapper ${css({ w: '100%', position: 'relative', p: '6', sm: { p: '8' }, lg: { p: '10' } })}`}>
+            <p class={css({ fontSize: 'sm', lg: { fontSize: 'lg', textAlign: 'center', lg: { maxW: '48rem', m: '0 auto' } } })}>
+                We acknowledge the Whadjuk Nyoongar people as the Traditional Owners of the lands and waters where Perth city is situated today, and pay our respect to Elders past and present.
+            </p>
+        </div>
+    </div>
+</section>

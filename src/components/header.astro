@@ -17,7 +17,7 @@ import LogoStandard2023Simple from '/public/svg/logo-standard-2023-simple.svg'; 
 import TicketIcon from '/public/svg/ticket-icon.svg'; // Import from root
 ---
 
-<header class={css({ position: 'relative', bg: 'white', w: '100%', display: 'flex', zIndex: '10' })}>
+<header id='header' class={`global-nav ${css({ position: 'relative', bg: 'white', w: '100%', display: 'flex', zIndex: '10' })}`}>
     <div class={css({ w: '100%', position: 'relative', maxW: '1200px', m: '0 auto' })}>
         <div class={css({ w: '100%', position: 'relative' })}>
             <div class={css({ display: 'flex', flexDir: 'row', justifyContent: 'space-between', alignItems: 'center' })}>
@@ -44,7 +44,7 @@ import TicketIcon from '/public/svg/ticket-icon.svg'; // Import from root
                         <a
                             aria-label={`Buy tickets`}
                             href={`/`}
-                            class={css({ w: '20', h: '20', bg: '2023-orange', display: 'flex', justifyContent: 'center', alignItems: 'center', md: { w: 'auto', h: 'auto', bg: '2023-green', px: '8', py: '5' } })}
+                            class={css({ w: '20', h: '20', bg: '2023-orange', display: 'flex', justifyContent: 'center', alignItems: 'center', md: { w: 'auto', h: 'auto', bg: '2023-green', px: '8', py: '5', transition: 'colors', _hover: { bg: '2023-orange' }, _active: { bg: '2023-red' }, _focus: { ring: '2023-black' } } })}
                         >
                             <Svg src={TicketIcon} className={css({ w: '7', xs: { w: '8' }, md: { display: 'none' } })} />
                             <span class={css({ display: 'none', color: 'white', md: { display: 'block', fontFamily: 'display', fontWeight: 'semibold' } })}>

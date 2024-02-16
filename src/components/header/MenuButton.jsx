@@ -11,6 +11,7 @@ export default function MenuButton() {
 
     return (
         <button
+            id='navigation'
             onClick={() => isMenuOpen.set(!$isMenuOpen)} // write to the imported store using `.set`
             className={css({ w: '28', h: '20', fontFamily: 'display', fontWeight: 'semibold', position: 'relative', zIndex: '101', cursor: 'pointer', md: { display: 'none' } })}
         >

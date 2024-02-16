@@ -1,7 +1,13 @@
 ---
+// Components
+import SkipToContent from '../components/header/skip-to-content.astro'
 import Header from '../components/header.astro'
+import Footer from '../components/footer.astro'
+import Acknowledgement from '../components/acknowledgement.astro'
 import Hero from '../components/hero.astro'
 import Layout from './layout.astro'
+
+// Styles
 import { main } from './main.css'
 
 // PANDA CSS
@@ -15,11 +21,12 @@ const { title } = Astro.props
 ---
 
 <Layout title={title}>
+    <SkipToContent />
     <Header />
-    <div class={css({ bg: 'red.400', w: '100%', h: '100px' })} />
-    <!-- <Nav menu={menu.Top} /> -->
     <Hero />
-    <main id="content" class={main}>
+    <main id="main" class={main}>
         <slot />
     </main>
+    <Footer />
+    <Acknowledgement />
 </Layout>
